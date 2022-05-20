@@ -29,7 +29,7 @@ h5,
 h6,
 ul,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 p {
     margin-bottom: 0;
@@ -280,6 +280,7 @@ padding-bottom: 94px;
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--white-text-color);
 }
 .team-tittle {
         margin-bottom: 50px;
@@ -342,7 +343,6 @@ padding-bottom: 94px;
 .social-team-link {
     width: 44px;
     height: 44px;
-    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,6 +360,10 @@ padding-bottom: 94px;
 .social-team-link:focus .social-team-icon {
     fill: var(--white-text-color); 
 }
+.social-team-item:not(:last-child) {
+    margin-right: 10px;
+    background-color: var(--white-text-color);
+}
 /* regular */
 .regular {
     padding-top: 94px;
@@ -376,7 +380,6 @@ padding-bottom: 94px;
 .regular-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
 }
 .regular-item:not(:last-child) {
     margin-right: 30px;
@@ -510,6 +513,7 @@ margin-right: 0;
 .portfolio-btn.button:focus{
     background-color: var(--bg-btn-color);
     color: var(--white-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* cards */
 .container.card-list {
@@ -523,6 +527,13 @@ margin-right: 0;
 .portfolio-card-list {
     margin-bottom: 0;
     padding-top: 0;
+}
+.portfolio-card-link {
+    display: block;
+}
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project {
     display: block;
